@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href=""><img src="" alt="logo"></a>
-            
-            <div>
-                <a href="">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="">SERVICES</a>
-                <a href="">RESUME</a>
-                <a href="">PORTFOLIO</a>
-                <a href="">FAQ</a>
-                <a href="">CLIENT</a>
-                <a href="">CONTACT</a>
+    <nav class="contenedor">
+        <a href="">ENZO M</a>
+        
+        <div class="nav-bar">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SERVICES</a>
+            <a href="">RESUME</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">FAQ</a>
+            <a href="">CLIENT</a>
+            <a href="">CONTACT</a>
 
-            </div>
-            <a href=""> <img src="" alt="facebook"></a>
-            <a href=""> <img src="" alt="twitter"></a>
-            <a href=""> <img src="" alt="instagram"></a>
-        </nav>
+        </div>
+        <div class="nav-redes">
+            <a href=""> <img src="/assets/icons/redes/icons8-facebook-nuevo-48.png" alt="facebook"></a>
+            <a href=""> <img src="/assets/icons/redes/icons8-twitter-48.png" alt="twitter"></a>
+            <a href=""> <img src="/assets/icons/redes/icons8-instagram-24.png" alt="instagram"></a>
+        </div>
+    </nav>
+    <header class="contenedor">
 
         <div class="header-cont ">
             <div class="texto-header">
@@ -47,7 +49,7 @@
 
             </div>
 
-            <img class="img-header" src="./assets/img/sergey-sokolov-PlTm93DnS9s-unsplash.jpg" alt="foto perfil">
+            <img class="img-header" src="./assets/img/perfil.jpg" alt="foto perfil">
             
         </div>
 
@@ -100,7 +102,7 @@
             </div>
         </section>
 
-        <section id="services">
+        <section id="services" >
             <div class="encabezado-section">
                 <h2>¿Qué Hago?</h2>
                 <h3>Como puedo ayudar en tu proximo proyecto</h3>
@@ -177,7 +179,7 @@
             </div>
         </section>
 
-        <section id="curriculum">
+        <section id="curriculum" >
             <div class="encabezado-section">
                 <h2>Curriculum</h2>
                 <h3>Un resumen de mi Curriculum</h3>
@@ -248,15 +250,200 @@
                 
             </div>
 
-            <div class="cont-skills">
+            <div class="cont-skills ">
                 <h4>
                     Mis Skills
                 </h4>
-                <div class="skills-list">
-                    <p></p>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p >Diseño Web</p>
+                            <p>65%</p>
+                        </div>
+
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>Diseño Web</p>
+                            <p>65%</p>
+                        </div>
+
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>Diseño Web</p>
+                            <p>65%</p>
+                        </div>
+
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>Diseño Web</p>
+                            <p>65%</p>
+                        </div>
+
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>Diseño Web</p>
+                            <p>65%</p>
+                        </div>
+
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>Diseño Web</p>
+                            <p>65%</p>
+                        </div>
+
+                        <progress  max="100" value="65"></progress>
+                    </div>
+
+                    <button >
+                        <a href="./download/cvEnzo.txt" download="Curriculum Enzo">
+                            Descargar CV
+                        </a>
+                        
+                    </button>
+
                 </div>
             </div>
         </section>
+
+        <section id="portfolio">
+            <div class="encabezado-section">
+                <h2>Portfolio</h2>
+                <h3>Algunos de mis proyectos recientes</h3>
+
+            </div>
+
+            <!-- <nav>
+                
+            </nav> -->
+
+            <div class="grid-port">
+                
+                    <a href="#">
+                        <div class="item">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item">
+                        </div>
+                    </a>
+                
+                <!-- <a href="">
+                    <img src="./assets/img/grid-proy/proy1.jpg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="./assets/img/grid-proy/proy2.jpg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="./assets/img/grid-proy/proy3.jpg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="./assets/img/grid-proy/proy1.jpg" alt="">
+                </a> -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="column-contact">
+                <h3>
+                    Pongamonos en contacto
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae officiis provident facere necessitatibus corporis ipsum dolorem aspernatur maiores, sunt perferendis totam architecto nobis velit.
+                </p>
+
+                <span>
+                   Residiendo en
+                </span>
+                <p>
+                    Direccion ficticia, 1234 , Cordoba, Argentina.
+                </p>
+
+                <span>
+                    Llamar a:
+                 </span>
+                 <p>
+                     (351) 2012894
+                 </p>
+
+                 <div class="links-contact">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                 </div>
+
+            </div>
+
+            <div class="column-contact">
+                <h3>
+                    Estimemos tu proyecto
+                </h3>
+
+                <form action="">
+                    <label for=""> Cual es tu nombre?
+                    </label>
+                    <input type="text" name="" id="">
+
+                    <label for=""> Deja tu correo
+                    </label>
+                    <input type="email" name="" id="">
+
+                    <label for=""> Como te puedo ayudar?
+                    </label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <button type="submit">
+                        Enviar <img src="/assets/icons/flecha-derecha.png" alt="icono flecha">
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>
+
+            Derechos reservados 2022 <a href="">Empresa</a>.
+        </p>
+
+        <p>
+            Diseñado por <a href="">Enzo Marchesi Web Dev</a>
+        </p>
+    </footer>
 </body>
 </html>
