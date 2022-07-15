@@ -12,48 +12,48 @@
         <a href="">ENZO M</a>
         
         <div class="nav-bar">
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">SERVICES</a>
-            <a href="">RESUME</a>
-            <a href="">PORTFOLIO</a>
+            <a href="#home">HOME</a>
+            <a href="#about">ACERCA DE</a>
+            <a href="#services">SERVICIOS</a>
+            <a href="#curriculum">CURRICULUM</a>
+            <a href="#portfolio">PORTFOLIO</a>
             <a href="">FAQ</a>
             <a href="">CLIENT</a>
-            <a href="">CONTACT</a>
+            <a href="#contact">CONTACTO</a>
 
         </div>
         <div class="nav-redes">
-            <a href=""> <img src="/assets/icons/redes/icons8-facebook-nuevo-48.png" alt="facebook"></a>
-            <a href=""> <img src="/assets/icons/redes/icons8-twitter-48.png" alt="twitter"></a>
-            <a href=""> <img src="/assets/icons/redes/icons8-instagram-24.png" alt="instagram"></a>
+            <a href=""> <img src="./assets/icons/redes/icons8-facebook-nuevo-48.png" alt="facebook"></a>
+            <a href=""> <img src="./assets/icons/redes/icons8-twitter-48.png" alt="twitter"></a>
+            <a href=""> <img src="./assets/icons/redes/icons8-instagram-24.png" alt="instagram"></a>
         </div>
     </nav>
-    <header class="contenedor">
+    <header id="home" class="contenedor">
 
         <div class="header-cont ">
             <div class="texto-header">
                 <h1>
-                    HI, I'M A FREELANCER <span>DEVELOPER</span>
+                    HOLA, SOY UN FRONT END <span>DEVELOPER</span>
                 </h1>
                 <p>
-                    based in Los Angeles, USA.
+                    viviendo en Córdoba, ARG.
                 </p>
                 <div class="botones">
-                    <button>
-                        View my works
+                    <button class="boton-negro">
+                        Mira mis trabajos
                     </button>
             
-                    <a href="#">Contact me</a>
+                    <a href="#">Contactame</a>
         
                 </div>
 
             </div>
 
-            <img class="img-header" src="./assets/img/perfil.jpg" alt="foto perfil">
+            <img class="img-header" src="./assets/img/enzo.jpg" alt="foto perfil">
             
         </div>
 
-        <i>Icono flecha abajo</i>
+        <img class="flecha-abajo" src="/assets/icons/flecha-hacia-abajo.png" alt="">
     </header>
 
     <main>
@@ -65,7 +65,7 @@
             </div>
             <div class="info-cont">
                 <div class="text-about">
-                    <p>Hola, Mi nombre es Enzo Marchesi</p>
+                    <p>Hola, Mi nombre es <strong>Enzo Marchesi</strong></p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, minus. Nobis impedit commodi aut accusamus saepe quia harum autem qui veniam. Consectetur aliquam aut nisi delectus cupiditate dolores magni accusantium!</p>
 
                 </div>
@@ -257,7 +257,31 @@
                 <div class="skills-grid">
                     <div class="skill">
                         <div class="texto-skill">
-                            <p >Diseño Web</p>
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+
+                        <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>CSS</p>
+                            <p>75%</p>
+                        </div>
+
+                        <progress max="100" value="75"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>JavaScript</p>
+                            <p>70%</p>
+                        </div>
+
+                        <progress max="100" value="70"></progress>
+                    </div>
+                    <div class="skill">
+                        <div class="texto-skill">
+                            <p>React</p>
                             <p>65%</p>
                         </div>
 
@@ -265,7 +289,7 @@
                     </div>
                     <div class="skill">
                         <div class="texto-skill">
-                            <p>Diseño Web</p>
+                            <p>Bootstrap</p>
                             <p>65%</p>
                         </div>
 
@@ -273,45 +297,20 @@
                     </div>
                     <div class="skill">
                         <div class="texto-skill">
-                            <p>Diseño Web</p>
-                            <p>65%</p>
-                        </div>
-
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div class="skill">
-                        <div class="texto-skill">
-                            <p>Diseño Web</p>
-                            <p>65%</p>
-                        </div>
-
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div class="skill">
-                        <div class="texto-skill">
-                            <p>Diseño Web</p>
-                            <p>65%</p>
-                        </div>
-
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div class="skill">
-                        <div class="texto-skill">
-                            <p>Diseño Web</p>
+                            <p>SCSS</p>
                             <p>65%</p>
                         </div>
 
                         <progress  max="100" value="65"></progress>
                     </div>
 
-                    <button >
-                        <a href="./download/cvEnzo.txt" download="Curriculum Enzo">
-                            Descargar CV
-                        </a>
-                        
-                    </button>
-
                 </div>
+                <button class="boton-gris">
+                    <a href="./download/cvEnzo.txt" download="Curriculum Enzo">
+                        Descargar CV
+                    </a>
+                    
+                </button>
             </div>
         </section>
 
@@ -347,22 +346,15 @@
                         <div class="item">
                         </div>
                     </a>
+                    <a href="#">
+                        <div class="item">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                        </div>
+                    </a>
                 
-                <!-- <a href="">
-                    <img src="./assets/img/grid-proy/proy1.jpg" alt="">
-                </a>
-
-                <a href="">
-                    <img src="./assets/img/grid-proy/proy2.jpg" alt="">
-                </a>
-
-                <a href="">
-                    <img src="./assets/img/grid-proy/proy3.jpg" alt="">
-                </a>
-
-                <a href="">
-                    <img src="./assets/img/grid-proy/proy1.jpg" alt="">
-                </a> -->
             </div>
         </section>
 
@@ -391,19 +383,17 @@
 
                  <div class="links-contact">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/icons/redes/icons8-twitter-48.png" alt="twitter">
                     </a>
 
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/icons/redes/icons8-facebook-nuevo-48.png" alt="facebook">
                     </a>
-
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/icons/redes/icons8-github-24.png" alt="github">
                     </a>
-
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/icons/redes/icons8-linkedin-48.png" alt="linkedin">
                     </a>
                  </div>
 
@@ -427,8 +417,8 @@
                     </label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                    <button type="submit">
-                        Enviar <img src="/assets/icons/flecha-derecha.png" alt="icono flecha">
+                    <button class="boton-negro" type="submit">
+                        Enviar <img src="./assets/icons/flecha-derecha.png" alt="icono flecha">
                     </button>
                 </form>
             </div>
