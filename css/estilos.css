@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: 'Albert Sans', sans-serif;
 }
+body{
+    width: 100%;
+}
 
 header, section{
     height: 100%;
@@ -18,7 +21,7 @@ nav{
     padding: 0 5%;
 }
 footer{
-    padding: 5% 5%;
+    padding: 3% 10%;
 }
 
 .encabezado-section{
@@ -158,7 +161,7 @@ h3{
     text-align: center;
 }
 #circulo-amarillo{
-    background: radial-gradient(yellow, yellow);
+    background: radial-gradient(#F5DF4E, #F5DF4E);
     border-radius: 50px;
     
 }
@@ -167,7 +170,7 @@ h3{
     font-size: 50px;
 }
 
-#about .data-cont{
+.data-cont{
     display: flex;
 }
 
@@ -336,7 +339,72 @@ footer{
     height: 5%;
     background-color: black;
     color: white;
-    padding: 2% 2%;
     display: flex;
     justify-content: space-between;
+}
+
+/*    MEDIA QUERIES       */
+
+
+@media (max-width:900px) {
+
+    /*  GENERALES   */
+
+    h2{
+        background-color: #F5DF4E;
+        font-size: 1rem;
+    }
+    
+    h3{
+        font-size: 2.5rem;
+    }
+    /*     HEADER      */
+    .nav-bar{
+        display: none;
+    }
+    .header-cont{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .texto-header{
+        width: 100%;
+        text-align: center;
+    }
+    .texto-header h1{
+        padding: 3% 0;
+    }
+    .texto-header p{
+        display: none;
+    }
+
+    header .img-header{
+        height: 300px;
+        width: 300px;
+    }
+    header .flecha-abajo{
+        height: 20px;
+        width: 20px;
+    }
+
+    /*           ABOUT      */
+
+    .info-cont{
+        flex-direction: column;
+    }
+    .text-about{
+        text-align: center;
+        width: 100%;
+    }
+
+    .years-cont{
+        padding: 3% 0;
+    }
+
+    .data-cont{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .data-tarj{
+        padding: 4% 2%;
+    }
 }
