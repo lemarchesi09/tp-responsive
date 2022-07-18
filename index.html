@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="contenedor">
-        <a href="">ENZO M</a>
+        <a href="" id="logo">ENZO M</a>
         
         <div class="nav-bar">
             <a href="#home">HOME</a>
@@ -22,6 +22,13 @@
             <a href="#contact">CONTACTO</a>
 
         </div>
+        <a href="#" id="menu-open">
+            <img src="./assets/icons/menu-open-close.png" alt="" id="img-menu-open">
+        </a>
+        <a href="#" id="menu-close">
+            <img src="./assets/icons/close-menu.png" alt="" id="img-menu-close">
+        </a>
+        
         <div class="nav-redes">
             <a href="https://www.facebook.com/lemarchesi09"> <img src="./assets/icons/redes/icons8-facebook-nuevo-48.png" alt="facebook"></a>
             <a href="#"> <img src="./assets/icons/redes/icons8-twitter-48.png" alt="twitter"></a>
@@ -29,11 +36,33 @@
         </div>
     </nav>
     <header id="home" class="contenedor">
+        <div class="menu-open-close">
+            <ul class="menu-lista">
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ACERCA DE</a>
+                </li>
+                <li>
+                    <a href="#services">SERVICIOS</a>
+                </li>
+                <li>
+                    <a href="#curriculum">CURRICULUM</a>
+                </li>
+                <li>
+                    <a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="header-cont ">
             <div class="texto-header">
                 <h1>
-                    HOLA, SOY UN FRONT END <span>DEVELOPER</span>
+                    HOLA, SOY UN FRONT END <span>DEVELOPER</span> 
                 </h1>
                 <p>
                     viviendo en Córdoba, ARG.
@@ -306,7 +335,7 @@
 
                 </div>
                 <button class="boton-gris">
-                    <a href="./download/cvEnzo.txt" download="Curriculum Enzo">
+                    <a href="./download/Enzo Marchesi CV Español.pdf" download="Curriculum Enzo">
                         Descargar CV
                     </a>
                     
@@ -428,12 +457,13 @@
     <footer>
         <p>
 
-            Derechos reservados 2022 <a href="">Empresa</a>.
+            Derechos reservados 2022 <a href="#">Empresa</a>.
         </p>
 
         <p>
-            Diseñado por <a href="">Enzo Marchesi Web Dev</a>
+            Diseñado por <a href="#">Enzo Marchesi Web Dev</a>
         </p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

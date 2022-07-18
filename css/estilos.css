@@ -44,6 +44,12 @@ footer{
     align-items: center;
 }
 
+.boton-negro:hover{
+    background-color:white;
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
 /*         HEADER           */
 nav{
     display: flex;
@@ -54,6 +60,10 @@ nav{
     position: fixed;
     width: 100%;
 }
+#logo{
+    color: black;
+    font-weight: 900;
+}
 nav a{
     text-decoration: none;
 }
@@ -62,6 +72,11 @@ nav a{
     margin-left: 1rem;
     text-decoration: none;
     color: black;
+}
+.nav-bar a:hover{
+    color: #F5DF4E;
+    
+    transition: all .2s ease-in-out;
 }
 
 nav img{
@@ -74,7 +89,28 @@ header{
     flex-direction: column;
 }
 
-
+.menu-lista{
+    display: none;
+}
+.menu-lista li{
+    display: flex;
+    align-items: center;
+}
+.menu-lista a{
+    color: black;
+    text-decoration: none;
+}
+#menu-open{
+    display: none;
+}
+#menu-close{
+    display: none;
+}
+.menu-open-close{
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
 .header-cont{
     display: flex;
     justify-content: space-around;
@@ -85,13 +121,40 @@ header{
     flex-direction: column;
     width: 30%;
     justify-content: space-evenly;
-    ;
 }
+
+/* @keyframes tipeo {
+    0% {
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes blink {
+    0%, 100%{
+        border-color:transparent;
+    }
+    50%{border-color: white;}
+}
+
+.texto-header span{
+    display: block;
+    width: 11ch;
+    overflow: hidden;
+    border-right: .15em solid ;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: blink 3s steps(9), tipeo 1s steps(9) ;
+} */
+
+
+
 .img-header{
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 40%;
     border: 10px solid #EAEBED;
-    border-radius: 200px;
+    border-radius: 250px;
 
 }
 .flecha-abajo{
@@ -110,6 +173,12 @@ header{
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
+    transition: all .2s ease-in-out;
+}
+.botones a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+    transform: scale();
 }
 
 /*Esto no es nada, solo para commitear*/
@@ -198,6 +267,15 @@ h3{
     
 }
 
+.grid-tarj span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.grid-tarj p{
+    padding: 3% 0;
+}
+
 /*         CURRICULUM             */
 
 .cont-cur{
@@ -263,11 +341,19 @@ progress[value]::-webkit-progress-value {
     margin-top: 20px;
 
 }
+.boton-gris:hover{
+    background-color: black;
+    transition: all 1s ease-in-out;
+}
+
 .boton-gris a{
     color: black;
     text-decoration: none;
 }
-
+.boton-gris:hover a{
+    color: white;
+    transition: all 1s ease-in-out;
+}
 
 
   /*      PORTFOLIO          */
@@ -342,13 +428,53 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+footer a{
+    color: #F5DF4E;
+}
 
 /*    MEDIA QUERIES       */
 
+#menu-close{
+    display: none;
+}
 
-@media (max-width:900px) {
+@media (max-width:1050px) {
+
+    .nav-bar{
+        display: none;
+    }
+    #menu-open{
+        display: block;
+    }
+
+    .menu-lista{
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        
+        background: rgb(255, 255, 255);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 11px;
+        height: 50vh;
+
+    }
+    li{
+        flex-grow: 1;
+        align-self: center;
+    }
+}
+
+
+@media (max-width:750px) {
 
     /*  GENERALES   */
+
+    header, section{
+        padding: 7% 2%;
+    }
 
     h2{
         background-color: #F5DF4E;
@@ -356,7 +482,7 @@ footer{
     }
     
     h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     /*     HEADER      */
     .nav-bar{
@@ -407,4 +533,89 @@ footer{
     .data-tarj{
         padding: 4% 2%;
     }
+
+    /*        SERVICES              */
+
+    .grid-services{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*       CURRICULUM          */
+
+    .cont-cur{
+        flex-direction: column;
+    }
+    .column-cur{
+        width: 100%;
+    }
+
+    .skills-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skill{
+        height: 45px;
+    }
+    .boton-gris{
+        width: 30%;
+    }
+
+    /*       PORTFOLIO         */
+
+    .grid-port{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-port a{
+        width: 290px;
+        height: 290px;
+    }
+
+    /*      CONTACT               */
+
+    #contact{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .column-contact{
+        width: 100%;
+        align-items: center;
+    }
+    .links-contact{
+        padding: 5% 0;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    .boton-negro{
+        align-self: center;
+    }
+
+    /*       FOOTER           */
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p{
+        padding: 2% 0;
+    }
+
+    footer a{
+        color: #F5DF4E;
+    }
+
 }
+
+
+
