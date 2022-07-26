@@ -20,6 +20,7 @@ header, section{
     padding: 5% 10% 0% 10%;
 }
 
+
 nav{
     padding: 0 5%;
 }
@@ -61,9 +62,13 @@ footer{
 .nav-osc{
     background-color: #F5DF4E;
 }
+
 .fondo-negro{
-    background-color: black;
+    background-color: rgb(0 0 0 / 96%);
     color: white;
+}
+.fon-amarillo{
+    background-color: #F5DF4E;
 }
 /*         HEADER           */
 nav{
@@ -397,7 +402,6 @@ progress[value]::-webkit-progress-value {
 /*       CONTACT               */
 
 #contact{
-    background-color: #F5DF4E;
     display: flex;
 }
 .column-contact{
