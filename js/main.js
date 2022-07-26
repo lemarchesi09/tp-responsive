@@ -30,10 +30,6 @@ botonMenuClose.addEventListener('click', e =>{
 btnModoOscuro.addEventListener('click', e =>{
     navBar.classList.toggle('nav-osc');
 
-    seccAmarillas.forEach((item)=>{
-      
-    })
-
     secBlancas.forEach((item)=>{
         item.classList.toggle('fondo-negro');
     })
