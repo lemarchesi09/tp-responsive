@@ -7,7 +7,10 @@ let menuCont = document.querySelector('.menu-open-close')
 
 let menuLista = document.querySelector('.menu-lista')
 
+let btnModoOscuro = document.querySelector('.boton-mo')
 
+let navBar = document.querySelector('nav')
+let secciones = 
 
 botonMenuOpen.addEventListener('click', e =>{
     menuCont.style.display = 'block'
@@ -20,5 +23,12 @@ botonMenuClose.addEventListener('click', e =>{
     botonMenuOpen.style.display = 'block'
     menuCont.style.display = 'none'
     botonMenuClose.style.display = 'none'
+})
+
+btnModoOscuro.addEventListener('click', e =>{
+    navBar.classList.toggle('nav-osc');
+
+
+    
 })
 

@@ -11,6 +11,9 @@
 body{
     width: 100%;
 }
+section{
+    background-color: white;
+}
 
 header, section{
     height: 100%;
@@ -49,7 +52,19 @@ footer{
     color: black;
     transition: all 1s ease-in-out;
 }
-
+/*     DARK MODE         */
+.boton-mo{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav-osc{
+    background-color: #F5DF4E;
+}
+.fondo-negro{
+    background-color: black;
+    color: white;
+}
 /*         HEADER           */
 nav{
     display: flex;
@@ -367,7 +382,7 @@ progress[value]::-webkit-progress-value {
 .grid-port a{
     width: 350px;
     height: 350px;
-    background-image:url(/assets/img/grid-proy/proy1.jpg);
+    background-image:url(../assets/img/grid-proy/proy1.jpg);
     background-size: cover;
     margin: 1% 1%;
 }
