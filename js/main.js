@@ -11,8 +11,12 @@ let btnModoOscuro = document.querySelector('.boton-mo')
 
 let navBar = document.querySelector('nav')
 
+let linksNavBar = document.querySelectorAll('.link-a')
+
 let seccAmarillas = document.querySelectorAll('.fon-amarillo') 
 let secBlancas = document.querySelectorAll('.fon-blanco')
+
+let icoTwiteer = document.querySelector('.ico-twitter')
 
 botonMenuOpen.addEventListener('click', e =>{
     menuCont.style.display = 'block'
@@ -33,6 +37,13 @@ btnModoOscuro.addEventListener('click', e =>{
     secBlancas.forEach((item)=>{
         item.classList.toggle('fondo-negro');
     })
+
+    //se arregla con item.style pero no puedo volver al color original
+    linksNavBar.forEach((item) =>{
+        item.classList.toggle('.link-mod-oscuro');
+    })
+    
+
 /*     seccAmarillas.classList.toggle('fondo-negro') */
     
 })
