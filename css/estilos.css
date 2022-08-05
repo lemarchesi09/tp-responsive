@@ -11,9 +11,6 @@
 body{
     width: 100%;
 }
-section{
-    background-color: white;
-}
 
 header, section{
     height: 100%;
@@ -68,17 +65,24 @@ footer{
     background-color: rgb(0 0 0 / 96%);
     color: silver;
 }
-.fon-amarillo{
+.fon-amarillo {
     background-color: #F5DF4E;
 }
 
 .link-a{
     color: black;
 }
-.link-mod-oscuro{
+/* .link-mod-oscuro{
     color: white;
+} */
+
+.luna-blanca{
+    filter: invert();
 }
 
+.img-services-oscuro{
+    filter: invert();
+}
 
 /*         HEADER           */
 nav{
@@ -101,7 +105,6 @@ nav a{
 .nav-bar a{
     margin-left: 1rem;
     text-decoration: none;
-    color: black;
 }
 .nav-bar a:hover{
     color: #F5DF4E;
