@@ -262,7 +262,7 @@ h3{
     flex-direction: column;
     text-align: center;
 }
-#circulo-amarillo{
+.numero{
     background: radial-gradient(#F5DF4E, #F5DF4E);
     border-radius: 50px;
     
